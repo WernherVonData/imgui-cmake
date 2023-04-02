@@ -1,14 +1,14 @@
 project(imgui-allegro)
 
 set(HEADERS
-include/imconfig.h
-include/imconfig_allegro5.h
-include/imgui.h
-include/imgui_impl_allegro5.h
-include/imgui_internal.h
-include/imstb_rectpack.h
-include/imstb_textedit.h
-include/imstb_truetype.h
+include/imgui/imconfig.h
+include/imgui/imconfig_allegro5.h
+include/imgui/imgui.h
+include/imgui/imgui_impl_allegro5.h
+include/imgui/imgui_internal.h
+include/imgui/imstb_rectpack.h
+include/imgui/imstb_textedit.h
+include/imgui/imstb_truetype.h
 )
 
 set(SOURCES
