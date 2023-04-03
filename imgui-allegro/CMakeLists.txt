@@ -20,9 +20,16 @@ src/imgui_tables.cpp
 src/imgui_widgets.cpp
 )
 
-add_library(imgui-allegro STATIC ${HEADERS} ${SOURCES})
+add_library(${PROJECT_NAME} STATIC ${HEADERS} ${SOURCES})
 
-target_include_directories(imgui-allegro PUBLIC include PRIVATE src)
+target_include_directories(${PROJECT_NAME}
+PUBLIC
+include
+PRIVATE
+src
+)
 
-target_link_libraries(imgui-allegro PUBLIC allegro)
-
+target_link_libraries(${PROJECT_NAME}
+PUBLIC
+allegro
+)
